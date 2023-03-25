@@ -113,6 +113,7 @@ h2.cardTitle {
   font-family: "Montserrat", sans-serif;
   padding: 0.5em;
   text-decoration: none;
+  color: var(--darkBrown);
 }
 .readPostButton a:hover {
   border-color: var(--lightBlue);
