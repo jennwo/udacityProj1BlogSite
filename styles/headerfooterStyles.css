@@ -21,19 +21,12 @@
 }
 .aboutNavLink a, .contactNavLink a, .homeNavLink a{
     text-decoration: none;
+    color: var(--darkBrown);
 
 }
 #currentPage{
     border-bottom: 2px solid var(--white);
 }
-a{
-    color:(--darkBrown);
-}
-a:hover{
-    color: var(--vDarkBlue);
-    font-size: 1.2em;
-}
-
 
 /*FOOTER STYLES*/
 #footerContainer{
