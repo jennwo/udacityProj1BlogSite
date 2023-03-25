@@ -1,0 +1,114 @@
+@media(min-width: 750px) and (max-width: 1000px){
+  #footerContainer{
+      margin: auto;
+      align-self: center;
+      justify-self: center;
+      width: 100vw;
+  }
+  .callToAction{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .callToActionText{
+      width: 35vw;
+      padding-right: 1em;
+      font-size: 1.5em;
+      margin-bottom: none;
+      font-weight: bold;
+      transform:translate(3rem, 3rem);
+  }
+  .mailingListForm{
+      transform: translateY(0);
+  }
+  .mailSubFormfieldset{
+      transform: translateX(-4.5rem);
+      padding: .5em;
+      width: 55%;
+  }
+  .footerNav{
+      padding-top: 1em;
+      transform: translateX(-7rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .socialIcons{
+      transform: translateX(1.5rem);
+  }
+  .footerLogo{
+      transform: translateX(2rem);
+  }
+  .footerEndNav{
+      transform: translateX(1rem);
+  }
+}
+
+@media (min-width: 1001px){
+  #footerContainer{
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+      "logo   join";
+  }
+  .callToAction{
+      grid-area: join;
+  }
+  .footerNav{
+      grid-area: logo;
+  }
+  .callToActionText{
+      grid-area: join;
+  }
+  .mailingListForm{
+      grid-area: form;
+      max-width: 50vw;
+      transform: translateY(-2rem);
+  }
+  .socialIcons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--softWhite);
+      flex-grow: 0;
+      font-size: 1.5rem;
+  }
+  .icon{
+      padding-right: 1rem;
+      padding-bottom: .5rem;
+  }
+  .mailSubFormfieldset{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      color: var(--softWhite);
+      border: 2px dashed var(--white);
+  }
+
+  .mailSublegend{
+      color: var(--white);
+  }
+  .mailLegendText{
+      font-weight: 500;
+      font-size: 1.5rem;
+  }
+  .mailingListForm{
+      width: 70vw;
+  }
+  .formInput{
+      width: 20vw;
+      flex-grow: 1;
+  }
+  .formcontent.email{
+      width: 20vw;
+      flex-grow: 1;
+  }
+  h3.callToActionText{
+      font-size: 2em;
+      margin-bottom: none;
+  }
+  .footerNav{
+      transform: translateX(-2rem);
+  }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100&family=Sono:wght@300;400&display=swap');
+
+/* COLORS */
+:root{
+    --lightBlue: #a9cdef;
+    --vLightBlue: #e8f4fc;
+    --vDarkBlue: #1c232b;
+    --darkBrown: #473110;
+    --white: hsl(0, 0%, 100%);
+    --lightGray: #c1d1e0;
+    --darkGray: #5b5f6e;
+}
+hmtl{
+    font-size: 62.5%; 
+    /* (62.5/100) * 16px => 10px; 1rem = 10px */
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--darkGray);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Sono', sans-serif;
+    color: var(--softWhite);
+    font-weight: 400;
+}

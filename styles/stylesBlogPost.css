@@ -1,0 +1,236 @@
+@import url("mainStyles.css");
+@import url("headerfooterStyles.css");
+@import url("headerFooterStylesLRG.css");
+
+body {
+  background-color: var(--lightBlue);
+}
+#mainContainer {
+  min-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-right: 1.5em;
+  padding: 1em;
+}
+.blogImage {
+  justify-self: center;
+  margin: auto;
+  width: 300px;
+}
+.figureCaptionText {
+  font-size: 0.8em;
+  margin-top: 0;
+}
+.blogPost {
+  padding: 0 1em;
+  margin: auto;
+  margin-left: 1em;
+}
+.blogDate {
+  padding: 0;
+  margin-top: -1rem;
+  font-size: 0.7em;
+}
+.blogPostText {
+  text-indent: 7%;
+  text-align: justify;
+}
+.firstParagraph::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(vDarkBlue);
+}
+.blogPostQuote {
+  font-style: italic;
+  font-family: "Sono", sans-serif;
+  font-weight: 500;
+  padding: 0;
+  color: var(--vLightBlue);
+  font-size: 1.5em;
+}
+.shareLinkText {
+  margin-right: 1rem;
+}
+.shareIcons {
+  display: inline-flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+.asideContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.authorInfo {
+  width: 85vw;
+  grid-area: author;
+}
+.authorInfoArticle {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-areas: "photo text";
+}
+.authorsImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--vLightBlue);
+  padding: 0;
+  grid-area: photo;
+}
+.authorText {
+  grid-area: text;
+  text-align: justify;
+  text-indent: 5%;
+}
+.authorExperience {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  margin-top: -1rem;
+}
+.prevPosts {
+  margin-left: 2em;
+  align-self: flex-start;
+  border: 1px solid purle;
+}
+.prevPostHead {
+  text-align: center;
+  font-weight: bold;
+  transform: translateX(1rem);
+}
+.prevPostsList {
+  list-style-position: inside;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.prevPostListItem {
+  margin-right: 1em;
+}
+#footerContainer {
+  margin: auto;
+  justify-self: center;
+}
+
+/* MED SCREEN STYLES */
+@media (min-width: 600px) and (max-width: 1399px) {
+  .blogImageWrapper {
+    float: right;
+  }
+  .blogPost {
+    margin-left: 2rem;
+  }
+  .blogPostTitle,
+  .blogDate {
+    transform: translateX(-11rem);
+  }
+  .blogDate {
+    transform: translateX(-11rem);
+  }
+  .asideContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "author prev";
+  }
+  .authorInfo {
+    padding: 0;
+    grid-area: author;
+    width: 40vw;
+  }
+  .authorsImage {
+    margin-left: 3rem;
+  }
+  .authorText {
+    margin-left: 2rem;
+    text-align: left;
+  }
+  .prevPosts {
+    grid-area: prev;
+    margin-bottom: 2rem;
+  }
+  .prevPostsList {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .shareIcons {
+    position: absolute;
+    top: 9.5rem;
+    right: 0.2rem;
+  }
+}
+
+/* LARGE SCREEN STYLES */
+@media (min-width: 1400px) {
+  #mainContainer {
+    display: grid;
+    grid-template-columns: 0.05fr 0.95fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "author article"
+      "prev   prev";
+    column-gap: 5px;
+    max-height: 100vh;
+  }
+  .blogPost {
+    height: 100vh;
+    grid-area: article;
+    margin-bottom: 2rem;
+  }
+  .blogImageWrapper {
+    float: right;
+  }
+  .blogPostTitle {
+    font-size: 2em;
+    transform: translateX(-5em);
+  }
+  .blogDate {
+    transform: translateX(-10.2rem);
+  }
+  .shareIcons {
+    position: absolute;
+    top: -0.1rem;
+    right: 10rem;
+    transform: translateY(10.5rem);
+  }
+  .asideContainer {
+    display: flex;
+    transform: translateY(-5rem);
+    border-right: 1px solid var(--vLightBlue);
+    padding-right: 1em;
+  }
+  .prevPosts {
+    transform: translateY(-1rem);
+  }
+  .authorInfo {
+    width: 20vw;
+    text-align: center;
+    grid-area: author;
+  }
+  .authorInfoArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .authorsImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--vLightBlue);
+    transform: translateX(4rem);
+  }
+  .authorText {
+    text-align: center;
+  }
+  .prevPostsList {
+    display: block;
+  }
+  #footerContainer {
+    transform: translate(0);
+  }
+}

@@ -1,0 +1,128 @@
+#headerContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: var(--lightBlue);
+    width: 100vw;
+    padding-bottom: 1rem;
+    margin-bottom: .5rem;
+}
+
+.navList{
+    display: inline-flex;
+    margin: auto;
+    list-style-type: none;
+}
+
+.navList li{
+    margin-right: 2.5rem;
+    font-family: 'Sono', sans-serif;
+    transform: translateX(1rem);
+}
+.aboutNavLink a, .contactNavLink a, .homeNavLink a{
+    text-decoration: none;
+
+}
+#currentPage{
+    border-bottom: 2px solid var(--white);
+}
+a{
+    color:(--darkBrown);
+}
+a:hover{
+    color: var(--vDarkBlue);
+    font-size: 1.2em;
+}
+
+
+/*FOOTER STYLES*/
+#footerContainer{
+    justify-self: center;
+    display: grid;
+    place-items: center;
+    margin-top: .5rem;
+    width: 100vw;
+    background-color: var(--lightGray);
+    padding-bottom: 1rem;
+    
+}
+.callToActionText{
+    display: flex;
+    flex-direction: column;
+}
+.socialsCallToAction{
+    text-align: center;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    flex-grow: 0;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.icon{
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+}
+.icon a{
+    text-decoration: none;
+    color: var(--white);
+}
+.icon a:hover{
+    text-decoration: underline;
+    color: var(--white);
+}
+.mailingListForm{
+    min-width: 250px;
+    transform: translateY(-1.5rem);
+}
+.mailSubFormfieldset{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+.mailSublegend{
+    color: var(--white);
+}
+.mailingListForm{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+.formContent{
+    color: var(--darkGray);
+    margin-top: 1rem;
+    margin: auto;
+    list-style-type: none;
+    margin-bottom: .5rem;
+    padding-right: 1rem;
+}
+.formInput{
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+.formLabel{
+    min-width: 110px;
+}
+.formcontent.email{
+    width: 100%;
+}
+.submitButton{
+    background-color: var(--vLightBlue);
+    color: var(--darkGray);
+    border: 1.5px solid var(--lightBlue);
+    border-radius: 10px;
+    width: 30vw;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    padding: .5rem;
+    margin-top: 1.5rem;
+}
