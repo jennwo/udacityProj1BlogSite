@@ -22,7 +22,10 @@
 .aboutNavLink a, .contactNavLink a, .homeNavLink a{
     text-decoration: none;
     color: var(--darkBrown);
-
+}
+.aboutNavLink a:hover, .contactNavLink a:hover, .homeNavLink a:hover{
+    text-decoration: none;
+    color: var(--vLightBlue);
 }
 #currentPage{
     border-bottom: 2px solid var(--white);
